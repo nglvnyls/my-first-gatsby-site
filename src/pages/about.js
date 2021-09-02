@@ -2,6 +2,19 @@ import * as React from "react"
 import Layout from "../components/layout"
 
 // styles
+const pageStyles = {
+  color: "#232129",
+  padding: 96,
+  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+}
+const headingStyles = {
+  marginTop: 0,
+  marginBottom: 64,
+  maxWidth: 320,
+}
+const headingAccentStyles = {
+  color: "#663399",
+}
 const paragraphStyles = {
   marginBottom: 48,
 }
@@ -68,12 +81,12 @@ const badgeStyle = {
 
 
 // markup
-const IndexPage = () => {
+const AboutPage = () => {
   return (
-    <Layout pageTitle="Home page">
-      <p style={paragraphStyles}>I'm making this by following the Gatsby Tutorial.</p>
+    <Layout pageTitle="About me">
+       <p style={paragraphStyles}>Hi there! I'm the proud creator of this site, which I built with Gatsby.</p>
     </Layout>
   )
 }
 
-export default IndexPage
+export default AboutPage
